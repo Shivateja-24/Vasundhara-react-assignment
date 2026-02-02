@@ -19,13 +19,9 @@ export default function CountdownTimer() {
       });
     }, 10);
 
-    // cleanup ensures no multiple timers
     return () => clearInterval(intervalId);
   }, [status]);
 
-  /* ======================
-     HANDLERS
-  ====================== */
   const startTimer = () => {
     setTimeLeft(inputSeconds * 1000);
     setStatus("Running");
@@ -48,7 +44,6 @@ export default function CountdownTimer() {
     <div className="max-w-md mx-auto bg-white p-6 rounded-xl shadow space-y-4">
       <h2 className="text-xl font-semibold">Countdown Timer</h2>
 
-      {/* Input */}
       <input
         type="number"
         min="1"
@@ -57,8 +52,6 @@ export default function CountdownTimer() {
         onChange={(e) => setInputSeconds(Math.max(1, Number(e.target.value)))}
         className="w-full border p-2 rounded"
       />
-
-      {/* Display */}
       <div className="text-3xl font-mono text-center">
         {(timeLeft / 1000).toFixed(2)}s
       </div>
@@ -69,7 +62,6 @@ export default function CountdownTimer() {
         <p className="text-center text-red-600 font-semibold">⏰ Time’s up!</p>
       )}
 
-      {/* Controls */}
       <div className="flex justify-center gap-2">
         {status === "Idle" && (
           <button
