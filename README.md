@@ -1,16 +1,101 @@
-# React + Vite
+# Vasundhara Geo Technologies – React Developer Intern Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project is a single-page React application built as part of the React Developer Intern assignment.  
+It demonstrates core React concepts such as state management, controlled forms, dynamic UI updates, and component-based architecture
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> **Note:** Timer task is not fully implemented .
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- **React** (with Vite)
+- **JavaScript (ES6+)**
+- **Tailwind CSS**
+- **Node.js** (v18+ recommended)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Steps to Run the Project Locally
+
+### Prerequisites
+
+- **Node.js** version **18.x or higher**
+- npm (comes with Node.js)
+
+### Installation
+
+```bash
+git clone https://github.com/Shivateja-24/Vasundhara-react-assignment.git
+cd vasundhara-react-assignment
+npm install
+```
+
+### Start the server
+
+```bash
+npm run dev
+```
+
+### The applicatio will be live at
+
+```bash
+http://localhost:5173
+```
+
+## 📋 Features Implemented
+
+### Task 1 – Enhanced Todo App
+
+- Add, delete, and mark tasks as complete
+- Task filtering (All / Active / Completed)
+- Priority selection for tasks
+- Persistent storage using `localStorage`
+- Clean separation of components and a reusable custom hook
+
+---
+
+### Task 2 – Form Handling & Password Toggle
+
+- Controlled form inputs
+- Inline validation with error messages
+- Email format validation
+- Show/Hide password functionality using icons
+- Displays submitted data and clears form after submission
+
+---
+
+### Task 3 – Multi Input Progress Bar
+
+- Multiple numeric inputs (0–100)
+- Single main progress bar (average value)
+- Sub-progress bars for each input
+- Dynamic updates and color changes based on percentage
+- Input value clamping to prevent invalid entries
+
+---
+
+### Task 4 – Advanced Countdown Timer (Partial Implementation)
+
+- Configurable input with default value
+- Start, Pause, Resume, and Reset functionality
+- Millisecond-precision countdown
+- Status display (Idle, Running, Paused, Completed)
+- “Time’s up!” message on completion
+
+---
+
+### Task 5 – Live Search with Highlighting
+
+- Case-insensitive search over a predefined list
+- Highlights matching text (including multiple occurrences)
+- Displays count of matching results
+- Shows “No matches found” when applicable
+
+---
+
+## Limitations & Trade-offs
+
+- Routing and deployment were not implemented as they were not explicitly mentioned in the assignment doc.
