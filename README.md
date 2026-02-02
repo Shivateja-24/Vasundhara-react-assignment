@@ -62,7 +62,7 @@ http://localhost:5173
 - Controlled form inputs
 - Inline validation with error messages
 - Email format validation
-- Show/Hide password functionality using icons
+- Show/Hide password functionality
 - Displays submitted data and clears form after submission
 
 ---
